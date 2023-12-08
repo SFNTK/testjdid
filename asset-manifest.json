@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/testjdid/static/css/main.39d1fd40.css",
+    "main.js": "/testjdid/static/js/main.bf855920.js",
+    "static/js/787.d5fa4d18.chunk.js": "/testjdid/static/js/787.d5fa4d18.chunk.js",
+    "static/media/Etihad_Stadium.jpg": "/testjdid/static/media/Etihad_Stadium.d20d723439bd2845129c.jpg",
+    "static/media/wp9333076.jpg": "/testjdid/static/media/wp9333076.3ecbd9c9d209868eb055.jpg",
+    "static/media/Absolute_Reality_v16_logo_for_football_and_soccer_jerseys_mar_3.jpg": "/testjdid/static/media/Absolute_Reality_v16_logo_for_football_and_soccer_jerseys_mar_3.f40464fcebcd39fa1fd4.jpg",
+    "static/media/lionel-messi-4k-wallpaper-preview.jpg": "/testjdid/static/media/lionel-messi-4k-wallpaper-preview.6d6f5ca9e4c008b25281.jpg",
+    "static/media/revicons.eot": "/testjdid/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/testjdid/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/testjdid/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/testjdid/index.html",
+    "main.39d1fd40.css.map": "/testjdid/static/css/main.39d1fd40.css.map",
+    "main.bf855920.js.map": "/testjdid/static/js/main.bf855920.js.map",
+    "787.d5fa4d18.chunk.js.map": "/testjdid/static/js/787.d5fa4d18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39d1fd40.css",
+    "static/js/main.bf855920.js"
+  ]
+}
