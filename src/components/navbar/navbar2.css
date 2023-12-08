@@ -1,0 +1,17 @@
+#nav2pc{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#nav2pc ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-self: center;
+    width: 30%;
+}
+
+#nav2pc ul li{
+    margin: 0% 5%;
+}

@@ -1,0 +1,17 @@
+#pgprdctcont{
+    width: "100%";
+    padding: "4% 4%";
+    display: flex;
+
+}
+.infocompo{
+    width: 50%;
+}
+.imagescompo{
+    width: 50%;
+    height: 60vh;
+    background-image: url("../../../public/lionel-messi-4k-wallpaper-preview.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
