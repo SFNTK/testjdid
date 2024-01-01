@@ -7,7 +7,7 @@ const Cardproduct = () => {
     return (
         <div style={{ width: "100%", display: "flex", flexWrap: "wrap", columnGap: "3%", rowGap: "10px" }}>
             <div id='card'>
-                <img className='prdctimg' src="" />
+                <img className='prdctimg' src="./ronaldo-wc2002-vaultleadjpg.jpg" />
                 <div className='prdctinfo'>
                     <span className='prdctnamme'>REAL MADRID</span>
                     <span className='prdctprice'>25<sup>DH</sup></span>
@@ -18,7 +18,7 @@ const Cardproduct = () => {
 
             </div>
             <div id='card'>
-                <img className='prdctimg' src="" />
+                <img className='prdctimg' src="./wp9333076.jpg" />
                 <div className='prdctinfo'>
                     <span className='prdctnamme'>REAL MADRID</span>
                     <span className='prdctprice'>25<sup>DH</sup></span>
