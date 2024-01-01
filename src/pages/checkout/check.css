@@ -1,0 +1,15 @@
+#conto{
+    width:90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+
+}
+#conto img{
+    width: 50%;
+}
+#conto form{
+    width: 40%;
+    
+}

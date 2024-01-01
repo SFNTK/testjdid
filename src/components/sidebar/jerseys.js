@@ -5,10 +5,12 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import UpdateIcon from '@mui/icons-material/Update';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import { useNavigate } from 'react-router-dom';
 
 const Jerseys = ({setcontent}) => {
     const [open, setOpen] = React.useState(true);
    
+    const navigate=useNavigate()
 
     const handleClick = () => {
       setOpen(!open);
@@ -25,7 +27,7 @@ const Jerseys = ({setcontent}) => {
       <Collapse in={open} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItemButton sx={{ pl: 4 }} onClick={()=>{
-            setcontent("add jersey")
+            navigate('/admin/addjersey')
           }}>
             <ListItemIcon>
             <AddCircleIcon/>
@@ -33,7 +35,7 @@ const Jerseys = ({setcontent}) => {
             <ListItemText primary="ADD JERSEY" />
           </ListItemButton>
           <ListItemButton sx={{ pl: 4 }} onClick={()=>{
-            setcontent("update jersey")
+            navigate("/admin/updatejersey")
           }}>
             <ListItemIcon>
             <UpdateIcon/>

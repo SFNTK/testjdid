@@ -4,6 +4,7 @@ import Carousel from 'react-multi-carousel';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { Avatar, Rating } from '@mui/material';
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
+import iamgeskamlin from "../pictures/index"
 const Seventh = () => {
     const responsive = {
         desktop: {
@@ -69,7 +70,7 @@ const Seventh = () => {
                                 <Rating name="read-only" value={5} sx={{ paddingTop: "3%" }} precision={0.25} readOnly />
 
                             </div>
-                            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src="./pexels-andrew-personal-training-697509.jpg" />
+                            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src={iamgeskamlin.imgcustomers1} />
                         </div>
 
                     </div>
@@ -82,7 +83,7 @@ const Seventh = () => {
                                 <Rating name="read-only" value={5} sx={{ paddingTop: "3%" }} precision={0.25} readOnly />
 
                             </div>
-                            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src="./pexels-pixabay-220453.jpg" />
+                            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src={iamgeskamlin.imgcustomers2} />
                         </div>
 
                     </div>
@@ -95,7 +96,7 @@ const Seventh = () => {
                                 <Rating name="read-only" value={5} sx={{ paddingTop: "3%" }} precision={0.25} readOnly />
 
                             </div>
-                            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src="./pexels-italo-melo-2379004.jpg" />
+                            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src={iamgeskamlin.imgcustomers3} />
                         </div>
 
                     </div>
@@ -108,7 +109,7 @@ const Seventh = () => {
                                 <Rating name="read-only" value={5} sx={{ paddingTop: "3%" }} precision={0.25} readOnly />
 
                             </div>
-                            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src="./pexels-sindre-fs-1040880.jpg" />
+                            <Avatar sx={{ width: 56, height: 56 }} alt="Remy Sharp" src={iamgeskamlin.imgcustomers4} />
                         </div>
 
                     </div>

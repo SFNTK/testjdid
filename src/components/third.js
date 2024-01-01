@@ -1,10 +1,11 @@
 import React, { useRef } from 'react';
-
+import imageskamlin from'../pictures/index'
 const Third = () => {
     const ref1=useRef()
     const ref2=useRef()
     const ref3=useRef()
     const ref4=useRef()
+    
     return (
         <div id='thrr'>
             <div id='contaie'>
@@ -17,7 +18,7 @@ const Third = () => {
                     <div className='over' ref={ref1}>
                         <h2>HIGH QUALITY JERSEYS</h2>
                     </div>
-                    <img ref={ref2} className='tswira' src='./lionel-messi-4k-wallpaper-preview.jpg' />
+                    <img ref={ref2} className='tswira' src={imageskamlin.imgmessi} />
                    
                 </div>
                 <div id='immm'  onMouseEnter={()=>{
@@ -29,7 +30,7 @@ const Third = () => {
                 <div className='over' ref={ref3}>
                 <h2>PERFECT PRICES</h2>
                 </div>
-                <img ref={ref4} className='tswira' src='./wp9333076.jpg' />
+                <img ref={ref4} className='tswira' src={imageskamlin.imgcris} />
                     
                 </div>
             </div>

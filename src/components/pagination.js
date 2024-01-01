@@ -1,15 +1,18 @@
 import { Pagination } from '@mui/material';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+import { Page2context } from '../pages/page2/page2';
 
-const Pagination1 = ({setPage}) => {
-    const [pagi,setpagi]=useState()
+const Pagination1 = ({last}) => {
+  const { pagival,setpagival,setpagination,pagination} = useContext(Page2context)
+  
     
   const handleChange = (event, value) => {
-
-    setPage(value)
+    
+  
+    setpagination(value)
   };
     return (
-        <Pagination   sx={{marginTop:"9%"}} count={10} variant="outlined" onChange={handleChange} />
+        <Pagination   sx={{marginTop:"9%"}} count={last} variant="outlined" onChange={handleChange} />
     );
 }
 

@@ -1,11 +1,14 @@
 import { ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import React from 'react';
 import BarChartIcon from '@mui/icons-material/BarChart';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-const Statistics = ({setcontent}) => {
+const Statistics = () => {
+  const navigate=useNavigate()
+const location=useLocation()
     return (
         <ListItemButton onClick={()=>{
-            setcontent("statistics")
+          location.pathname.split("/")[2]=="stats"?console.log("7na fiha"):navigate("/admin/stats")
         }}>
         <ListItemIcon>
           <BarChartIcon />

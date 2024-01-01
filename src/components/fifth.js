@@ -18,7 +18,7 @@ const Fifth = () => {
                 }}> <ShoppingBagIcon id="icnn" /> SHOP NOW</div>
             </div>
          
-                <img id='abtimg' src='./maradona-1606328373.jpg'/>
+                
                 
                 <div id='overl'></div>
             

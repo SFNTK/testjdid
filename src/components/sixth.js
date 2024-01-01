@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import Carousel from 'react-multi-carousel';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { Rating } from '@mui/material';
+import axios from 'axios';
+import Fourthcarousel from './fourthcarousel';
+
+
 const Sixth = () => {
+    const [content,setcontent]=useState(<div></div>)
+
+
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
@@ -31,6 +38,30 @@ const Sixth = () => {
             </div>
         );
     };
+useEffect(() => {
+  //Runs only on the first render
+  try{
+    axios.get(`${process.env.REACT_APP_APIURL}/commande/trendy`).then(res=>res.data).then(data=>{
+        const values=data.data.map((dt)=>{
+            return <Fourthcarousel image={dt.images[0]} title={dt.name} price={dt.prices[0].price} stars={dt.rating} id={dt._id} />
+          
+        })
+        setcontent(values)
+
+    })
+    .catch(error=>{
+        console.log(error)
+    })
+  }
+  catch(err){
+    console.log(err)
+
+  }
+
+
+}, []);
+
+
     return (
         <div  id="containn">
             <Carousel
@@ -56,48 +87,7 @@ sx={{position:"relative"}}
 
                
             >
-                 <div id='item'>
-                    <img id='img1' src="./inter.jpg" />
-                    <p id='title1' className='pdng'>
-                       INTER MILAN 2022
-                    </p>
-                    <span  className='pdng'>
-                        <Rating name="read-only" value={2} precision={0.25} readOnly />
-                    </span>
-                    <span  className='pdng' id='price1'>20<sup>DH</sup></span>
-                </div>
-                <div id='item'>
-                    <img id='img1' src="./387873626_850677586433592_3454741033777112757_n.jpg" />
-                    <p id='title1' className='pdng'>
-                       MAN UNITED 07
-                    </p>
-                    <span  className='pdng'>
-                        <Rating name="read-only" value={5} precision={0.25} readOnly />
-                    </span>
-                    <span  className='pdng' id='price1'>20<sup>DH</sup></span>
-                </div>
-
-                <div id='item'>
-                    <img id='img1' src="./387829160_849057019928982_6794097387075104108_n.jpg" />
-                    <p id='title1' className='pdng'>
-                      MAN UNITED 1998
-                    </p>
-                    <span  className='pdng'>
-                        <Rating name="read-only" value={1} precision={0.25} readOnly />
-                    </span>
-                    <span  className='pdng' id='price1'>20<sup>DH</sup></span>
-                </div>
-
-                <div id='item'>
-                    <img id='img1' src="./387830725_849057073262310_3266285352952087507_n.jpg" />
-                    <p id='title1' className='pdng'>
-                       MAROC 1994
-                    </p>
-                    <span  className='pdng'>
-                        <Rating name="read-only" value={4.5} precision={0.25} readOnly />
-                    </span>
-                    <span  className='pdng' id='price1'>20<sup>DH</sup></span>
-                </div>
+                {content}
 
             </Carousel>
         </div>

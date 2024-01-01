@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import imageskamlin from '../pictures/index'
 
 const Scndview = () => {
     const refer = useRef()
@@ -30,7 +31,7 @@ const Scndview = () => {
                         refer2.current.style.width = '0%';
                     }}
 >
-                <img ref={refer} src="./387829160_849057019928982_6794097387075104108_n.jpg" />
+                <img ref={refer} src={imageskamlin.imgman} />
                 <div 
                     id='overay'>
                     <p style={{ cursor: "pointer" }} >RETRO JERSEYS</p>
@@ -55,7 +56,7 @@ const Scndview = () => {
                     refer4.current.style.width = '0%';
                 }}
             >
-                <img ref={refer3} src="./all puma 2022 away kits national teams (11).jpg" />
+                <img ref={refer3} src={imageskamlin.imgmaroc} />
                 <div
                     id='overay'>
                     <p style={{ cursor: "pointer" }} >MOROCCAN JERSEYS</p>
@@ -78,7 +79,7 @@ const Scndview = () => {
                     refer6.current.style.width = '0%';
                 }}
             >
-                <img ref={refer5} src="./MilitoNamesetAlternate-InterMilan2010ChampionsLeagueFinalShort-Sleeve-540x360.jpg" />
+                <img ref={refer5} src={imageskamlin.imgmilito} />
                 <div
                     id='overay'>
                     <p style={{ cursor: "pointer" }} >LEGANDARY JERSEYS</p>
@@ -87,7 +88,7 @@ const Scndview = () => {
             </div>
 
             <div id='cntr'>
-                <img ref={refer7} src="./ronaldo-wc2002-vaultleadjpg.jpg" />
+                <img ref={refer7} src={imageskamlin.imgronaldo} />
                 <div onMouseEnter={() => {
                     refer8.current.style.transition = "width 0.5s ease"
                     refer7.current.style.transform = 'scale(1.1)';

@@ -173,7 +173,7 @@ justify-content: center;
     height: auto;
 
 }
-#item{
+.item{
 width: 80%;
 height: 90%;
 display: flex;
@@ -185,24 +185,24 @@ border-radius: 7px;
 
 
 }
-#item p{
+.item p{
     font-weight: 600;
     font-size: larger;
 }
-#item:hover{
+.item:hover{
     box-shadow: 0 10px 30px rgb(0,0,0,0.5);
 }
 .pdng{
     padding-left: 2%;
 }
-#price1{
+.price1{
     font-size: larger;
     padding-bottom: 12%;
 }
 
-#img1{
-    width: 100%;
-    height: auto;
+.img1{
+    width: auto;
+    height: 40vh;
 }
 
 #crsl{
@@ -463,7 +463,7 @@ align-self: self-start;
     margin-left: 35%;
     
 }
-#item{
+.item{
     box-shadow: 0 10px 30px rgb(0, 0, 0,0.4);
 }
 }

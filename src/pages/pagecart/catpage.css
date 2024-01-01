@@ -1,0 +1,89 @@
+#cart{
+    width: 90%;
+    display: flex;
+    margin-bottom: 2%;
+   margin-left: 3%;
+   transition: all .4s ease-in-out;
+   cursor: pointer;
+}
+
+#cart:hover{
+    box-shadow: 0 5px 10px rgb(0,0,0,0.5);
+}
+#contenttt{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    position: relative;
+    width: 65%;
+}
+#prdcimage{
+    width: 35%;
+    height: 400px;
+}
+#price{
+    
+}
+#taille{
+    font-size: x-large;
+    font-weight: bold;
+}
+#quantityconta{
+    display: flex;
+}
+
+#stock{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#trsh{
+    color: black;
+    transition: all .4s ease-in-out;
+  
+}
+#trsh:hover{
+    color: red;
+    transform: scale(1.1);
+}
+#formulaire{
+    width: 25%;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.5);
+    margin-right: 1%;
+    height: 100%;
+    padding-left: 2%;
+    padding-top: 1%;
+    background-color: aliceblue;
+    padding-bottom: 2%;
+    
+}
+#carta{
+    width: 75%;
+    transition: all .4s ease-in-out;
+}
+#carta:hover{
+    transform: scale(1.01);
+}
+#contenu2{
+    display: flex;
+    justify-content: space-between;
+}
+#close{
+   align-self:self-end ;
+   transition: all .3s ease-in-out;
+  
+  
+}
+#quantityconta{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#close:hover{
+    color: blue;
+    transform: scale(1.1);
+}
+
+.form-control{
+    width: 70%;
+}

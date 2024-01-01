@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import { styled, alpha } from '@mui/material/styles';
-import { InputBase } from '@mui/material';
+import { Badge, InputBase } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
 
 import { useLocation, useNavigate } from 'react-router-dom';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { useSelector } from 'react-redux';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -57,6 +59,8 @@ const Navbar = ({ theme, mode, setmode ,conteur,setconteur}) => {
     const [isHovered2, setIsHovered2] = useState(false);
     const [bgggl,setbackf]=useState()
     const [pst,setpst]=useState("absolute")
+    const products=useSelector(state=>state.cart.products)
+    const[Searchvalue,setsearch]=useState()
    
     useEffect(() => {
         //Runs only on the first render
@@ -77,7 +81,7 @@ const Navbar = ({ theme, mode, setmode ,conteur,setconteur}) => {
                 }} style={{ color: theme.palette.common.white  }}>LOGO</span>
 
 
-                <ul class="nv1" >
+                <ul class="nv1" style={{paddingTop:"1%"}} >
                     <li >
                         <a style={{ textAlign:"center",height:"100%", color: theme.palette.common.white   }} aria-current="page" href="#">Home</a>
                     </li>
@@ -86,11 +90,16 @@ const Navbar = ({ theme, mode, setmode ,conteur,setconteur}) => {
                         <ul class="dropdown-menu" style={{ backgroundColor: "grey", border: "none", textAlign: "center" }}>
                             <li class="dropdown-item" >
                                 <a style={{  color: theme.palette.common.black  ,cursor:"pointer" }}
+                                onClick={()=>{
+                                    navigate('/products/morocco?filter=all')
+                                }}
                                 onMouseEnter={()=>{
 
                                 }}
                                 >NATIONAL TEAMS</a></li>
-                            <li class="dropdown-item" ><a style={{  color: theme.palette.common.black   }}>TEAMS</a></li>
+                            <li class="dropdown-item" ><a onClick={()=>{
+                                    navigate('/products/napoli?filter=all')
+                                }} style={{  color: theme.palette.common.black   }}>TEAMS</a></li>
 
                         </ul>
                     </li>
@@ -100,17 +109,30 @@ const Navbar = ({ theme, mode, setmode ,conteur,setconteur}) => {
                         </a>
 
                     </li>
+                    <li>
+                    <Badge badgeContent={products.length} color="primary">
+  <ShoppingCartIcon style={{color:"white"}} onClick={()=>{
+    navigate("/cart")
+  }}/>
+</Badge>
+                    </li>
 
 
                 </ul>
                
                 <Search id='srchg'sx={{border:"1px solid",color: theme.palette.common.white , borderColor: theme.palette.common.white}}>
-                    <SearchIconWrapper>
+                    <SearchIconWrapper onClick={()=>{
+                        navigate(`/products/${Searchvalue}?filter=all`)
+                        alert(Searchvalue)
+                    }} >
                         <SearchIcon sx={{ color: theme.palette.common.white   }}/>
                     </SearchIconWrapper>
                     <StyledInputBase
                         placeholder="Search…"
                         inputProps={{ 'aria-label': 'search' }}
+                        onChange={(e)=>{
+                            setsearch(e.target.value)
+                        }}
                     />
                 </Search>
 
@@ -161,13 +183,19 @@ const Navbar = ({ theme, mode, setmode ,conteur,setconteur}) => {
                             </a>
 
                         </li>
-                        <Search sx={{border:"1px solid",color:  theme.palette.common.white  , borderColor:theme.palette.common.white ,width:"50%"}}>
-                            <SearchIconWrapper >
+                        <Search   onChange={(e)=>{
+                                    setsearch(e.target.value)
+                                    console.log(Searchvalue)
+                                }} sx={{border:"1px solid",color:  theme.palette.common.white  , borderColor:theme.palette.common.white ,width:"50%"}}>
+                            <SearchIconWrapper  onChange={(e)=>{
+                            setsearch(e.target.value)
+                        }} >
                                 <SearchIcon sx={{color:theme.palette.common.white }} />
                             </SearchIconWrapper>
                             <StyledInputBase
                                 placeholder="Search…"
                                 inputProps={{ 'aria-label': 'search' }}
+                              
                             />
                         </Search>
 

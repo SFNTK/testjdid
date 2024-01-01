@@ -9,9 +9,126 @@
 }
 .imagescompo{
     width: 50%;
-    height: 60vh;
-    background-image: url("../../../public/lionel-messi-4k-wallpaper-preview.jpg");
-    background-position: center;
-    background-size: cover;
+    height: auto;
+   
 
 }
+
+#mainimg{
+    width: 98%;
+    height: 80vh;
+}
+
+#miniimg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    column-gap: 1%;
+    row-gap: 1%;
+    
+}
+.miniimages{
+    width: 30%;
+    height: auto;
+}
+
+#sizes{
+    width: 80%;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+ 
+}
+.size{
+    width: 50px;
+    height: 50px;
+    border-radius: 9%;
+    margin: 3%;
+    cursor: pointer;
+   
+    text-align: center;
+    
+    
+
+ transition: all 0.4s ease-in-out;
+    column-gap: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4%;
+   
+}
+.size:hover{
+    transform: scale(1.1);
+    background-color: gainsboro;
+}
+
+#price{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+#bbtn2{
+    background-color: rgb(255, 0, 0);
+    height: auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 2%;
+    width:80%;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#counter{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 4%;
+}
+
+
+
+
+
+
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid orange;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+  }
+  .loader:after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 5px solid orange;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+   
+    transform: translate(-50%, -50%);
+    animation: scaleUp 1s linear infinite;
+  }
+  
+  @keyframes scaleUp {
+    0% { transform: translate(-50%, -50%) scale(0) }
+    60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+  }
+  @keyframes pulse {
+    0% , 60% , 100%{ transform:  scale(1) }
+    80% { transform:  scale(1.2)}
+  }
+  

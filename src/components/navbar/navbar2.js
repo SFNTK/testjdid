@@ -8,6 +8,7 @@ import { alpha } from '@mui/material';
 import { InputBase } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import { useLocation } from 'react-router-dom';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 
 const Search = styled('div')(({ theme }) => ({
