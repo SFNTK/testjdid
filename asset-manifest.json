@@ -1,22 +1,34 @@
 {
   "files": {
-    "main.css": "/testjdid/static/css/main.39d1fd40.css",
-    "main.js": "/testjdid/static/js/main.bf855920.js",
-    "static/js/787.d5fa4d18.chunk.js": "/testjdid/static/js/787.d5fa4d18.chunk.js",
-    "static/media/Etihad_Stadium.jpg": "/testjdid/static/media/Etihad_Stadium.d20d723439bd2845129c.jpg",
-    "static/media/wp9333076.jpg": "/testjdid/static/media/wp9333076.3ecbd9c9d209868eb055.jpg",
-    "static/media/Absolute_Reality_v16_logo_for_football_and_soccer_jerseys_mar_3.jpg": "/testjdid/static/media/Absolute_Reality_v16_logo_for_football_and_soccer_jerseys_mar_3.f40464fcebcd39fa1fd4.jpg",
-    "static/media/lionel-messi-4k-wallpaper-preview.jpg": "/testjdid/static/media/lionel-messi-4k-wallpaper-preview.6d6f5ca9e4c008b25281.jpg",
-    "static/media/revicons.eot": "/testjdid/static/media/revicons.a77de540a38981833f9e.eot",
-    "static/media/revicons.ttf": "/testjdid/static/media/revicons.57fd05d4ae650374c8de.ttf",
-    "static/media/revicons.woff": "/testjdid/static/media/revicons.e8746a624ed098489406.woff",
-    "index.html": "/testjdid/index.html",
-    "main.39d1fd40.css.map": "/testjdid/static/css/main.39d1fd40.css.map",
-    "main.bf855920.js.map": "/testjdid/static/js/main.bf855920.js.map",
-    "787.d5fa4d18.chunk.js.map": "/testjdid/static/js/787.d5fa4d18.chunk.js.map"
+    "main.css": "/static/css/main.272c3fa0.css",
+    "main.js": "/static/js/main.ae04980d.js",
+    "static/js/787.d5fa4d18.chunk.js": "/static/js/787.d5fa4d18.chunk.js",
+    "static/media/Etihad_Stadium.jpg": "/static/media/Etihad_Stadium.d20d723439bd2845129c.jpg",
+    "static/media/pexels-pixabay-220453.jpg": "/static/media/pexels-pixabay-220453.00e35c675a5fa16a8496.jpg",
+    "static/media/cool-soccer-jerseys.webp": "/static/media/cool-soccer-jerseys.a7c0401eb3a434fee2c1.webp",
+    "static/media/pexels-sindre-fs-1040880.jpg": "/static/media/pexels-sindre-fs-1040880.cca8e2b895283c86ea85.jpg",
+    "static/media/pexels-italo-melo-2379004.jpg": "/static/media/pexels-italo-melo-2379004.14d53b88cd7620d433ee.jpg",
+    "static/media/pexels-jack-winbow-1559486.jpg": "/static/media/pexels-jack-winbow-1559486.b5902580539ea264b5b8.jpg",
+    "static/media/wp9333076.jpg": "/static/media/wp9333076.3ecbd9c9d209868eb055.jpg",
+    "static/media/Absolute_Reality_v16_logo_for_football_and_soccer_jerseys_mar_3.jpg": "/static/media/Absolute_Reality_v16_logo_for_football_and_soccer_jerseys_mar_3.f40464fcebcd39fa1fd4.jpg",
+    "static/media/pexels-andrew-personal-training-697509.jpg": "/static/media/pexels-andrew-personal-training-697509.7bd4479d3d8ed6e4da03.jpg",
+    "static/media/all puma 2022 away kits national teams (11).jpg": "/static/media/all puma 2022 away kits national teams (11).9c3b1caef28caf97fbba.jpg",
+    "static/media/ronaldo-wc2002-vaultleadjpg.jpg": "/static/media/ronaldo-wc2002-vaultleadjpg.46edea53728117e0ca79.jpg",
+    "static/media/cristiano-ronaldo-4k-portugal-footballer-wallpaper-preview.jpg": "/static/media/cristiano-ronaldo-4k-portugal-footballer-wallpaper-preview.8805124a33763ab9bcb5.jpg",
+    "static/media/lionel-messi-4k-wallpaper-preview.jpg": "/static/media/lionel-messi-4k-wallpaper-preview.6d6f5ca9e4c008b25281.jpg",
+    "static/media/undraw_undraw_shopping_bags_2ude_(1)_mnw32.png": "/static/media/undraw_undraw_shopping_bags_2ude_(1)_mnw32.aa53e1516addc464ed81.png",
+    "static/media/MilitoNamesetAlternate-InterMilan2010ChampionsLeagueFinalShort-Sleeve-540x360.jpg": "/static/media/MilitoNamesetAlternate-InterMilan2010ChampionsLeagueFinalShort-Sleeve-540x360.963ffe508aa0c4032827.jpg",
+    "static/media/man.jpg": "/static/media/man.53db28f110643764350a.jpg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "main.272c3fa0.css.map": "/static/css/main.272c3fa0.css.map",
+    "main.ae04980d.js.map": "/static/js/main.ae04980d.js.map",
+    "787.d5fa4d18.chunk.js.map": "/static/js/787.d5fa4d18.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.39d1fd40.css",
-    "static/js/main.bf855920.js"
+    "static/css/main.272c3fa0.css",
+    "static/js/main.ae04980d.js"
   ]
 }
